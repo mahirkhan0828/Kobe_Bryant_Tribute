@@ -1,6 +1,4 @@
 # Kobe_Bryant_Tribute
-There are two files:
-One HTML
-One Javascript
 
-This project is a tribute webpage for legend Kobe Bryant
+This project is a tribute webpage for legend Kobe Bryant. It displays pictures, has a quote generator, and a timeline that summarizes his career.
+
