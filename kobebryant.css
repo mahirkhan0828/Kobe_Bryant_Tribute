@@ -1,0 +1,79 @@
+body {
+    background-color: #4B0082;
+  }
+  .container{
+    background-color: #4B0082;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows : 10%, 15%, 65%, 10%; 
+    grid-gap: 1%;
+    grid-template-areas:
+      "left title title right"
+      "left picture picture right"
+      "left quotes Timeline right"
+      "footer footer footer footer"
+   
+  }
+  .kobe-title{
+    background: rgb(255, 204, 0);
+    grid-area: title;
+  }
+  
+  .kobe-picture{
+    background: #4B0082;
+    grid-area: picture;
+  }
+  .kobe-picture img{
+    width: 90%;
+    cursor: pointer;
+  }
+  .kobe-timeline{
+    grid-area: Timeline;
+  }
+  .kobe-quotes{
+    grid-area: quotes;
+    background: rgb(255, 204, 0);
+    
+  }
+  .kobequotemachine{
+    grid-area: quotemachine;
+  }
+  .kobe-extrapic{
+    grid-area: extra;
+  }
+  .kobe-footer{
+    grid-area: footer;
+  }
+  .purple-color{
+    color: #4B0082;
+  }
+  .gold-color{
+    color: rgb(255, 204, 0);
+  }
+  .verticalspacing{
+    margin-bottom: 3cm;
+  }
+  li{
+    margin-bottom: 1cm;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h1{
+    font-size: 80px;
+  }
+  p{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  a{
+    font-weight: bold;
+  }
+  button{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #4B0082;
+  
+  }

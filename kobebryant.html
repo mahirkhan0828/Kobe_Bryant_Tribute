@@ -1,141 +1,71 @@
+<!DOCTYPE html>
 <html>
-<style>
-body {
-  background-color: #4B0082;
-}
-.container{
-  background-color: #4B0082;
-  grid-gap: 10px;
-  display: grid;
-  grid-template-columns: 5% 45% 45% 5%;
-  grid-template-rows: 250px 800px 1600px 250px;
-  grid-gap: 10px;
-  grid-template-areas:
-    "left title title right"
-    "left picture picture right"
-    "left quotes Timeline right"
-    "footer footer footer footer"
- 
-}
-.kobe-title{
-  background: rgb(255, 204, 0);
-  grid-area: title;
-}
-
-.kobe-picture{
-  background: #4B0082;
-  grid-area: picture;
-  width: 100%;
-}
-.kobe-timeline{
-  
-  grid-area: Timeline;
-}
-.kobe-quotes{
-  grid-area: quotes;
-  background: rgb(255, 204, 0);
-  
-}
-.kobequotemachine{
-  grid-area: quotemachine;
-}
-.kobe-extrapic{
-  grid-area: extra;
-}
-.kobe-footer{
-  grid-area: footer;
-}
-.purple-color{
-  color: #4B0082;
-}
-.gold-color{
-  color: rgb(255, 204, 0);
-}
-.verticalspacing{
-  margin-bottom: 3cm;
-}
-li{
-  margin-bottom: 1cm;
-  font-size: 20px;
-  font-weight: bold;
-}
-h1{
-  font-size: 80px;
-}
-p{
-  font-size: 20px;
-}
-h3{
-  font-size: 25px;
-}
-a{
-  font-weight: bold;
-}
-
-</style>
-
-<main>
-  <body>
-    <div class = "container">
-      <div class = "kobe-title">
-        <center><h1 class = "purple-color">Kobe Bryant</h1></center>
-        <center><h3 class = "purple-color">The man known as the Black Mamba</h3></center>
-      </div>
-      <div class = "kobe-picture"> 
-        <center> 
-        <img src = "https://clutchpoints.com/wp-content/uploads/2020/01/Kobe-Bryant-killed-in-fatal-helicopter-crash.jpg" alt = "Kobe Bryant Picture">
-        <p class = "gold-color">Here's a picture of Kobe Bean Bryant, a legend on and off the court. He entered the NBA straight out of highschool and played twenty years with the Los Angeles Lakers before retiring.</p>
-        </center>
-      </div>
-       <div class = "kobe-timeline">
-         <center>
-           <h3 class = "gold-color">Kobe Timeline: </h3>
-           <ul class = "gold-color">
-             <li>1978-Born in Philedelphia, father is Joe (also known as "Jelly Bean") Bryant  and was a 76ers player</li>
-             <li>1996-Lakers trade Divac in order to get the 13th pick and draft 17 year old Bryant, coming straight out of Highschool</li>
-             <li>1997-1996-Kobe named to all rookie team, averaging 7.6 points off the bench</li>
-             <li>1999-00-Bryant wins first championship with teammate Shaquille O'neal and coach Phil Jackson, against the Pacers</li>
-             <li>2000-01-Kobe records his firs 50 point game and averages 28.5 points per game. Lakers go on to repeat as champions, beating the 76ers</li>
-             <li>2001-02-Gets All Star MVP and the Lakers Three Peat, sweeping the Nets in the finals.</li>
-             <li>2003-04-Kobe and Shaq loses in the finals to Detroit. Duo is broken up with Shaq traded</li>
-             <li>2004-05-Lakers have terrible season with new coach quitting in the mid-season while Bryant suffers from injuries</li>
-             <li>2005-06- Bryant gets scoring title with 31.6 points per game but Lakers lose in first round of playoffs. Kobe is frustrated and wants to leave Lakers.</li>
-             <li>2007-08-Lakers are able to keep Bryant and make midseason trade for All Star Pau Gasol. Kobe wins MVP award but Lakers fall short to the Celtics in the finals</li>
-             <li>2008-09-Bryant wins fourth nba title and Finals MVP against the Orlando Magic</li>
-             <li>2009-10-Kobe wins fifth nba title with Finals MVP as the Lakers take the Celtics to 7 games in the finals</li>
-             <li>2012-13-Kobe gets his 15th all star appearance and passes Wilt Chamberlain on all time scoring list. He also ruptures his achilles tendon, causing him to miss many games</li>
-             <li>2016-Lakers hold a farewell game for Kobe as he drops 60 points with the whole world watching. In attendance are his former teammates and many celebrities</li>
-             <li>2018-Kobe wins academy award for his short film <i>Dear Basketball</i></li>
-             <li>2020- Kobe, daughter Gianna, and her teammates pass away in tragic helicopter accident while flying out for the team\'s game</li>
-             <p>Although we lost an icon and role model to many around the world, it is important to remember that Mamba Mentality will ALWAYS live on...Farewell Black Mamba</p>
-           </ul>
-  
-           </div>
-        <div class = "kobe-quotes">
-          <center>
-       
-            <div class = "kobequotemachine">
-           <h3 class = "purple-color">Kobe Quote Generator: </h3>
-        <h3 class = "purple-color" id = "displayquote">
-        </h3>
-        <button onclick = "KobeQuote()">New Quote</button>
-        <script src = "kobebryant.js"></script>
-              
-            </div>
-            <div class = "kobe-extrapic"></div>
-            <img width = 60% src = "https://cdn.clipart.email/f994056b72cc43db254ce8baa005ef9d_pin-by-jeremy-cavazos-on-cool-nba-player-cartoons-kobe-bryant-_1439-1772.jpeg" alt = "Kobe Cartoon Pic">
-            <img width = 60% src = "https://cdn.clipart.email/1c357247eff9864e1c9487e41fe6306e_free-cliparts-kobe-bryant-download-free-clip-art-free-clip-art-_720-739.jpeg" alt = "Another Kobe Cartoon Pic">
-             <img width = 60% src = "https://i.pinimg.com/originals/c2/6e/b4/c26eb4fc2eed0e82b70f54dac1941a8b.jpg" alt = "Last Kobe Cartoon Pic">
-            </center>
-         </div>
-      <div class = "kobe-footer"> 
+<head>
+  <link rel="stylesheet" type="text/css" href="kobebryant.css">
+</head>
+<body>
+  <div class = "container">
+    <div class = "kobe-title">
+      <center><h1 class = "purple-color">Kobe Bryant</h1></center>
+      <center><h3 class = "purple-color">The man known as the Black Mamba</h3></center>
+    </div>
+    <div class = "kobe-picture"> 
+      <center> 
+      <img id = "mainKobePic" src =   "https://clutchpoints.com/wp-content/uploads/2020/01/Kobe-Bryant-killed-in-fatal-helicopter-crash.jpg"
+      onclick = mainKobePic() alt = "Kobe Bryant Picture">
+      <p class = "gold-color">Here's a picture of Kobe Bean Bryant, a legend on and off the court. He entered the NBA straight out of highschool and played twenty years with the Los Angeles Lakers before retiring.</p>
+      <h3 class = "gold-color">Click the image for a surprise!</h3>
+      </center>
+    </div>
+      <div class = "kobe-timeline">
         <center>
-           <h3 class = "gold-color">Click <a class = "gold-color" href = "https://en.wikipedia.org/wiki/Kobe_Bryant">here</a> to learn more about the Black Mamba's life </h3>
-         </center>
-         
-      </div>
- 
+          <h3 class = "gold-color">Kobe Timeline: </h3>
+          <ul class = "gold-color">
+            <li>1978-Born in Philedelphia, father is Joe (also known as "Jelly Bean") Bryant  and was a 76ers player</li>
+            <li>1996-Lakers trade Divac in order to get the 13th pick and draft 17 year old Bryant, coming straight out of Highschool</li>
+            <li>1997-1996-Kobe named to all rookie team, averaging 7.6 points off the bench</li>
+            <li>1999-00-Bryant wins first championship with teammate Shaquille O'neal and coach Phil Jackson, against the Pacers</li>
+            <li>2000-01-Kobe records his first 50 point game and averages 28.5 points per game. Lakers go on to repeat as champions, beating the 76ers</li>
+            <li>2001-02-Gets All Star MVP and the Lakers Three Peat, sweeping the Nets in the finals.</li>
+            <li>2003-04-Kobe and Shaq loses in the finals to Detroit. Duo is broken up with Shaq traded</li>
+            <li>2004-05-Lakers have terrible season with new coach quitting in the mid-season while Bryant suffers from injuries</li>
+            <li>2005-06- Bryant gets scoring title with 31.6 points per game but Lakers lose in first round of playoffs. Kobe is frustrated and wants to leave Lakers.</li>
+            <li>2007-08-Lakers are able to keep Bryant and make midseason trade for All Star Pau Gasol. Kobe wins MVP award but Lakers fall short to the Celtics in the finals</li>
+            <li>2008-09-Bryant wins fourth nba title and Finals MVP against the Orlando Magic</li>
+            <li>2009-10-Kobe wins fifth nba title with Finals MVP as the Lakers take the Celtics to 7 games in the finals</li>
+            <li>2012-13-Kobe gets his 15th all star appearance and passes Wilt Chamberlain on all time scoring list. He also ruptures his achilles tendon, causing him to miss many games</li>
+            <li>2016-Lakers hold a farewell game for Kobe as he drops 60 points with the whole world watching. In attendance are his former teammates and many celebrities</li>
+            <li>2018-Kobe wins academy award for his short film <i>Dear Basketball</i></li>
+            <li>2020- Kobe, daughter Gianna, and her teammates pass away in tragic helicopter accident while flying out for the team\'s game</li>
+            <p>Although we lost an icon and role model to many around the world, it is important to remember that Mamba Mentality will ALWAYS live on...Farewell Black Mamba</p>
+          </ul>
+
+          </div>
+      <div class = "kobe-quotes">
+        <center>
       
-  </body>
-</main>
+          <div class = "kobequotemachine">
+          <h3 class = "purple-color">Kobe Quote Generator: </h3>
+      <h3 class = "purple-color" id = "displayquote">
+      </h3>
+      <button onclick = "KobeQuote()", class = "gold-color">New Quote</button>
+      <script src = "kobebryant.js"></script>
+            
+          </div>
+          <div class = "kobe-extrapic"></div>
+          <img width = 60% src = "https://cdn.clipart.email/f994056b72cc43db254ce8baa005ef9d_pin-by-jeremy-cavazos-on-cool-nba-player-cartoons-kobe-bryant-_1439-1772.jpeg" alt = "Kobe Cartoon Pic">
+          <img width = 60% src = "https://cdn.clipart.email/1c357247eff9864e1c9487e41fe6306e_free-cliparts-kobe-bryant-download-free-clip-art-free-clip-art-_720-739.jpeg" alt = "Another Kobe Cartoon Pic">
+            <img width = 60% src = "https://i.pinimg.com/originals/c2/6e/b4/c26eb4fc2eed0e82b70f54dac1941a8b.jpg" alt = "Last Kobe Cartoon Pic">
+          </center>
+        </div>
+    <div class = "kobe-footer"> 
+      <center>
+          <h3 class = "gold-color">Click <a class = "gold-color" href = "https://en.wikipedia.org/wiki/Kobe_Bryant">here</a> to learn more about the Black Mamba's life </h3>
+        </center>
+        
+    </div>
+
+    
+</body>
+
 </html>

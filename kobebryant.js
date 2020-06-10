@@ -25,7 +25,24 @@ var quotes = [
   "Haters are a good problem to have. Nobody hates the good ones. They hate the great ones.",
   "It\'s the one thing you can control. You are responsible for how people remember you or don\'t. So don\'t take it lightly."
 ]
+
+var pictures= [
+  "https://clutchpoints.com/wp-content/uploads/2020/01/Kobe-Bryant-killed-in-fatal-helicopter-crash.jpg",
+  "https://media.giphy.com/media/3oEjI575FJ9AQBJYWs/giphy.gif",
+  "https://media2.giphy.com/media/l3V0d1C0UfJe8x2TK/source.gif",
+  "https://media.giphy.com/media/xT9DPDoWMicL4nU3NC/giphy.gif"
+]
+
 function KobeQuote() {
   var randomNumber = Math.floor(Math.random()*(quotes.length));
   document.getElementById("displayquote").innerHTML = quotes[randomNumber];
+}
+
+var iterator = 1;
+function mainKobePic() {
+  if (iterator >= pictures.length){
+    iterator = 0
+  };
+  document.getElementById("mainKobePic").setAttribute("src", pictures[iterator]);
+  iterator+=1;
 }
